@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="keywords" content="" />
+<meta name="author" content="decole,duirnar" />
+
+<link rel="icon" href="favicon.ico"/>
+<!-- Styles of site -->
+<link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="ie_fixes.css" media="screen" /><![endif]-->
+<title>Новости по секциям: <?php // echo $bus["cat_name"]?></title>
+</head>
+<body>
+<div id="layout_wrapper">
+<div id="layout_content">
+	<?php include_once('tamplate/head.html');?>
+      <div id="main">		
+		<div class="post">
+<div class="left"> 
+			<?php  echo $bus["news"];?>
+</div>
+<div class="right">
+	<?php include_once('tamplate/r_bar.html');?>
+</div>    
+    <div class="clearer">&nbsp;</div>    
+    <?php include_once('tamplate/foot.html');?>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

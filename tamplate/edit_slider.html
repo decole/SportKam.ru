@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="keywords" content="" />
+<meta name="author" content="decole,duirnar" />
+
+<link rel="icon" href="favicon.ico"/>
+<!-- Styles of site -->
+<link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="ie_fixes.css" media="screen" /><![endif]-->
+<!-- Slider -->
+<!-- jQuery library -->
+		<script type="text/javascript" src="scripts/slider/js/external/_oldies/jquery-1.3.min.js"></script>
+		<!--<script type="text/javascript" src="../scripts/slider/js/external/jquery-1.6.2.min.js"></script>-->		
+		<!-- jQuery Plugin scripts -->
+		<script type="text/javascript" src="scripts/slider/js/external/jquery.easing.1.3.min.js"></script>
+		<script type="text/javascript" src="scripts/slider/js/external/jquery.mousewheel.min.js"></script>		
+		<!-- Slider Kit scripts -->
+		<script type="text/javascript" src="scripts/slider/js/sliderkit/jquery.sliderkit.1.9.2.pack.js"></script>	
+		<!-- Slider Kit launch -->
+		<script type="text/javascript">
+			$(window).load(function(){ //$(window).load() must be used instead of $(document).ready() because of Webkit compatibility		
+				// Photo gallery > Vertical
+				$(".photosgallery-vertical").sliderkit({
+					circular:true,
+					mousewheel:true,
+					shownavitems:5,
+					verticalnav:true,
+					navclipcenter:true,
+					auto:true
+				});				
+			});	
+		</script>			      
+		<!-- Slider Kit styles -->
+		<link rel="stylesheet" type="text/css" href="scripts/slider/css/sliderkit-core.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="scripts/slider/css/sliderkit-demos.css" media="screen, projection" />		
+		<!-- Slider Kit compatibility -->
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="../scripts/slider/css/sliderkit-demos-ie6.css" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../scripts/slider/css/sliderkit-demos-ie7.css" /><![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" type="text/css" href="../scripts/slider/css/sliderkit-demos-ie8.css" /><![endif]-->
+<title>****</title>
+</head>
+<body>
+<div id="layout_wrapper">
+	<div id="layout_content">
+      <div id="main">		
+		<div class="post">
+		<!-- -->
+        	<?php  echo $bus["slider_nav"];?>
+		<!-- --></div>
+	<br/><center>	
+		<form action="/index.php?page=edit_slider" method="post">
+          <p>Слайдер:<br/>
+            Слайд №1</p>
+            <table width="*" height="188" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td width="270">ссылка на страницу</td>
+    <td width="520"><input name="nc_link1" value="<?php echo $bus["nc_link1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>всплывает при наведении на миниатюру</td>
+    <td><input name="nc_lnk1" value="<?php echo $bus["nc_lnk1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на миниатюру</td>
+    <td><input name="nc_src1" value="<?php echo $bus["nc_src1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст миниатюры</td>
+    <td><input name="nc_alt_txt1" value="<?php echo $bus["nc_alt_txt1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на картинку</td>
+    <td><input name="sp_src1" value="<?php echo $bus["sp_src1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст картинки</td>
+    <td><input name="sp_alt_txt1" value="<?php echo $bus["sp_alt_txt1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Название новости</td>
+    <td><input name="pt_name1" value="<?php echo $bus["pt_name1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Текст новости</td>
+    <td><input type="text" name="pt_text1" value="<?php echo $bus["pt_text1"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>  
+</table>
+<br/>
+ Слайд №2
+<table width="*" height="188" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td width="270">ссылка на страницу</td>
+    <td width="520"><input name="nc_link2" value="<?php echo $bus["nc_link2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>всплывает при наведении на миниатюру</td>
+    <td><input name="nc_lnk2" value="<?php echo $bus["nc_lnk2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на миниатюру</td>
+    <td><input name="nc_src2" value="<?php echo $bus["nc_src2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст миниатюры</td>
+    <td><input name="nc_alt_txt2" value="<?php echo $bus["nc_alt_txt2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на картинку</td>
+    <td><input name="sp_src2" value="<?php echo $bus["sp_src2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст картинки</td>
+    <td><input name="sp_alt_txt2" value="<?php echo $bus["sp_alt_txt2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Название новости</td>
+    <td><input name="pt_name2" value="<?php echo $bus["pt_name2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Текст новости</td>
+    <td><input type="text" name="pt_text2" value="<?php echo $bus["pt_text2"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>  
+</table>
+<br/>
+ Слайд №3
+<table width="*" height="188" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td width="270">ссылка на страницу</td>
+    <td width="520"><input name="nc_link3" value="<?php echo $bus["nc_link3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>всплывает при наведении на миниатюру</td>
+    <td><input name="nc_lnk3" value="<?php echo $bus["nc_lnk3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на миниатюру</td>
+    <td><input name="nc_src3" value="<?php echo $bus["nc_src3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст миниатюры</td>
+    <td><input name="nc_alt_txt3" value="<?php echo $bus["nc_alt_txt3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на картинку</td>
+    <td><input name="sp_src3" value="<?php echo $bus["sp_src3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст картинки</td>
+    <td><input name="sp_alt_txt3" value="<?php echo $bus["sp_alt_txt3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Название новости</td>
+    <td><input name="pt_name3" value="<?php echo $bus["pt_name3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Текст новости</td>
+    <td><input type="text" name="pt_text3" value="<?php echo $bus["pt_text3"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>  
+</table>
+<br/>
+ Слайд №4
+<table width="*" height="188" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td width="270">ссылка на страницу</td>
+    <td width="520"><input name="nc_link4" value="<?php echo $bus["nc_link4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>всплывает при наведении на миниатюру</td>
+    <td><input name="nc_lnk4" value="<?php echo $bus["nc_lnk4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на миниатюру</td>
+    <td><input name="nc_src4" value="<?php echo $bus["nc_src4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст миниатюры</td>
+    <td><input name="nc_alt_txt4" value="<?php echo $bus["nc_alt_txt4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на картинку</td>
+    <td><input name="sp_src4" value="<?php echo $bus["sp_src4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст картинки</td>
+    <td><input name="sp_alt_txt4" value="<?php echo $bus["sp_alt_txt4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Название новости</td>
+    <td><input name="pt_name4" value="<?php echo $bus["pt_name4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Текст новости</td>
+    <td><input type="text" name="pt_text4" value="<?php echo $bus["pt_text4"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>  
+</table>
+<br/>
+ Слайд №5
+<table width="*" height="188" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td width="270">ссылка на страницу</td>
+    <td width="520"><input name="nc_link5" value="<?php echo $bus["nc_link5"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>всплывает при наведении на миниатюру</td>
+    <td><input name="nc_lnk5" value="<?php echo $bus["nc_lnk5"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на миниатюру</td>
+    <td><input name="nc_src5" value="<?php echo $bus["nc_src5"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст миниатюры</td>
+    <td><input name="nc_alt_txt5" value="<?php echo $bus["nc_alt_txt5"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>ссылка на картинку</td>
+    <td><input name="sp_src5" value="<?php echo $bus["sp_src5"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>альтер.текст картинки</td>
+    <td><input name="sp_alt_txt5" value="<?php echo $bus["sp_alt_txt5"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Название новости</td>
+    <td><input name="pt_name5" value="<?php echo $bus["pt_name5"];?>" maxlength="370" style="width:520px;"/></td>
+  </tr>
+  <tr>
+    <td>Текст новости</td>
+    <td><input type="text" name="pt_text5" value="<?php echo $bus["pt_text5"]; ?>" maxlength="370" style="width:520px;"/></td>
+  </tr>  
+</table>
+<input type="submit" value="Отправить">
+</form><br/>
+</center>
+      </div>
+	  </div>
+	</div>
+</div>
+</body>
+</html>

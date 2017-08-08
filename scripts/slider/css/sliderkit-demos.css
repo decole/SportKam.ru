@@ -1,0 +1,140 @@
+@charset "utf-8";
+/** 
+ *  sliderkit-demos.css
+ *	> CSS code for demos
+ *  
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2012 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/*---------------------------------
+ *  Photos slider > Vertical
+ *---------------------------------*/
+ 
+#photoslider-vertical{width:300px;height:335px;padding-left:200px;}
+
+/* Nav */
+#photoslider-vertical .sliderkit-nav{left:10px;top:99px;width:150px;height:90px;}
+#photoslider-vertical .sliderkit-nav-clip{top:19px;width:150px !important;text-align:center;}
+#photoslider-vertical .sliderkit-nav-clip li{width:150px !important;text-align:center;display:block;color:#090909;font-size:1.2em;text-transform:uppercase;}
+
+/* Buttons */
+#photoslider-vertical .sliderkit-nav-btn{position:absolute;z-index:10;left:110px;width:15px;height:15px;}
+#photoslider-vertical .sliderkit-nav-prev{top:0;}
+#photoslider-vertical .sliderkit-nav-next{top:75px;}
+#photoslider-vertical .sliderkit-nav-btn a{display:block;width:15px;height:15px;cursor:pointer;background:transparent url("../images/mc-hpslider-arrows.gif") no-repeat 0 0;}
+#photoslider-vertical .sliderkit-nav-prev a{background-position:0 0;}
+#photoslider-vertical .sliderkit-nav-next a{background-position:0 -15px;}
+#photoslider-vertical .sliderkit-nav-btn span{display:none;}
+#photoslider-vertical .sliderkit-panels{}
+
+
+/*
+ *  PHOTOS SLIDERS #2
+ *  ------------------------------------------------
+ */
+.left_slider{float: left; margin-left:4px; margin-top:5px;}
+/*---------------------------------
+ *  Photos slider > Multiple sliders
+ *---------------------------------*/		
+.multiple-sliders{width:600px;}
+.multiple-sliders-part{position:relative;width:190px;height:127px;}
+.multiple-sliders-part .sliderkit{width:190px;height:127px;margin:0;}
+.multiple-sliders-part .sliderkit-panel img{width:190px;}
+
+
+/*---------------------------------
+ *  Photos gallery > Vertical
+ *---------------------------------*/
+.photosgallery-vertical{width:690px;height:335px;margin-top:4px;margin-bottom:4px;}
+
+/* Nav */
+.photosgallery-vertical .sliderkit-nav{top:0;right:0;width:95px;height:100%;background:#000;}
+.photosgallery-vertical .sliderkit-nav-clip{left:7px;}
+.photosgallery-vertical .sliderkit-nav-clip ul li{margin:0;padding:0;}
+.photosgallery-vertical .sliderkit-nav-clip ul li a{display:block;width:75px;height:50px;overflow:hidden;padding:3px;}
+.photosgallery-vertical .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:3px solid #c5dbe6;}
+.photosgallery-vertical .sliderkit-nav-clip ul li img{width:75px;height:50px;margin-bottom:-3px;}
+
+/* Nav buttons */
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn{position:absolute;left:0;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn a{display:block;width:95px;height:16px;background:transparent url("../images/arrows-v.png") no-repeat center 0;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-btn a span{display:none;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-prev{top:25px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-next{bottom:25px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-prev a{background-position:center -89px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-next a{background-position:center -108px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-prev a:hover,
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:center -126px;}
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-next a:hover,
+.photosgallery-vertical .sliderkit-nav .sliderkit-nav-next a:focus{background-position:center -145px;}
+
+/* Go Buttons */
+.photosgallery-vertical .sliderkit-go-btn a{width:200px;height:300px;background:#ccc;opacity:.8;}
+.photosgallery-vertical .sliderkit-go-prev{top:0;left:0;}
+.photosgallery-vertical .sliderkit-go-next{top:0;right:0;}
+
+/* Panel */
+.photosgallery-vertical .sliderkit-panel{top:0;left:0;width:600px;height:335px;}
+
+/* Panel > Textbox */
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-textbox{bottom:0;left:0;height:85px;width:600px;}
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-text{height:65px;padding:10px 100px 10px 10px;font-size:0.9em;color:#fff;}
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-text h4{height:auto;margin:0 0 7px;line-height:1.1em;font-size:1.1em;font-weight:bold;border:none;}
+.photosgallery-vertical .sliderkit-panel .sliderkit-panel-overlay{height:85px;width:600px;background:#000;opacity:0.6;}
+
+/*---------------------------------
+ *	Tabs > Standard
+ *---------------------------------*/	
+.tabs_right{right:0;width:250;}
+.tabs-standard{width:245px;height:240px;}
+
+/* Nav */
+.tabs-standard .sliderkit-nav{width:240px;}
+.tabs-standard .sliderkit-nav-clip{margin:0;}
+.tabs-standard .sliderkit-nav-clip li{height:22px;margin:0 2px 0 0;}
+.tabs-standard .sliderkit-nav-clip li,
+.tabs-standard .sliderkit-nav-clip li a{float:left;background:transparent url("../images/tabs-menu.gif") no-repeat 0 0;}
+.tabs-standard .sliderkit-nav-clip li a{height:18px;margin:0;padding:4px 10px 0;color:#fff;text-decoration:none;}
+.tabs-standard .sliderkit-nav-clip li.sliderkit-selected{background-position:0 ;}
+.tabs-standard .sliderkit-nav-clip li.sliderkit-selected a{color:#000;}
+
+/* Panel */
+.tabs-standard .sliderkit-panels{width:240px;height:140px;border:1px solid #a3a3a3;background:#fff;}
+.tabs-standard .sliderkit-panel{width:240px;height:120px;background:#fff;}
+
+/* News block */
+.tabs-standard .sliderkit-news h3,
+.tabs-standard .sliderkit-news h3 a{color:#000;font-weight:bold;}
+.tabs-standard .sliderkit-news h3{font-size:1.2em;margin:0 0 15px;}
+.tabs-standard .sliderkit-news img{float:right;width:110px;margin:0 0 0 10px;overflow:hidden;}
+.tabs-standard .sliderkit-news p{margin:0;}
+
+/*---------------------------------
+ *	Tabs menu
+ *---------------------------------*/	
+.tabs-menu{position:relative;margin:0;display:block;border:1px solid #FFFFFF;}
+
+/* Nav */
+.tabs-menu .sliderkit-nav{border-bottom:1px solid #00668d;}
+.tabs-menu .sliderkit-nav-clip{margin:0;}
+.tabs-menu .sliderkit-nav-clip ul{list-style:none;}
+.tabs-menu .sliderkit-nav-clip li,
+.tabs-menu .sliderkit-nav-clip li a{float:left;margin:0;}
+.tabs-menu .sliderkit-nav-clip li a{padding:4px 10px;color:#fff;font-size:1.1em;text-decoration:none;color:#fff;border:1px solid #00668d;background:#0089BE;}
+.tabs-menu .sliderkit-nav-clip li a:hover{background:#00668d;color:#fff;}
+.tabs-menu .sliderkit-nav-clip li.sliderkit-selected a{border-bottom-color:#fff;background:#fff;}
+.tabs-menu .sliderkit-nav-clip li.sliderkit-selected a,
+.tabs-menu .sliderkit-nav-clip li.sliderkit-selected a:active{color:#000;}
+.tabs-menu .sliderkit-nav-clip li.donate{float:right;}
+.tabs-menu .sliderkit-nav-clip li.donate a{margin:0;color:#000;background-color:#ffb542;border-color:#f68b01;}
+.tabs-menu .sliderkit-nav-clip li.donate a:hover{color:#000;background:#fedfa1;}
+
+/* Panel */
+.tabs-menu .sliderkit-panels{width:150px;}
+.tabs-menu .sliderkit-panel{position:relative;}

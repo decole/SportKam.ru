@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="keywords" content="" />
+<meta name="author" content="decole,duirnar" />
+
+<link rel="icon" href="favicon.ico"/>
+<!-- Styles of site -->
+<link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="gallery.css" media="screen" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="ie_fixes.css" media="screen" />
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<!-- Подключаем Fancybox -->
+<script type="text/javascript" src="scripts/fancybox/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="scripts/fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="scripts/fancybox/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".example1").fancybox();
+    
+    $(".example2").fancybox({
+        'overlayShow'	: false,
+        'transitionIn'	: 'elastic',
+        'transitionOut'	: 'elastic'
+    });
+    
+    $(".example3").fancybox({
+        'transitionIn'	: 'none',
+        'transitionOut'	: 'none'	
+    });
+    
+    $(".example4").fancybox({
+        'opacity'		: true,
+        'overlayShow'	: false,
+        'transitionIn'	: 'elastic',
+        'transitionOut'	: 'none'
+    });
+
+    $(".example5").fancybox();
+    $(".example6").fancybox({
+        'titlePosition'		: 'outside',
+        'overlayColor'		: '#000',
+        'overlayOpacity'	: 0.9
+    });
+
+    $(".example7").fancybox({
+        'titlePosition'	: 'inside'
+    });
+
+    $(".example8").fancybox({
+        'titlePosition'	: 'over'
+    });
+    
+    $("a[rel=group], a[rel=gr_2]").fancybox({
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none',
+        'titlePosition' 	: 'over',
+        'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
+    });
+    
+    $("#various1").fancybox({
+        'titlePosition'		: 'inside',
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none'
+    });
+    
+    $("#various2").fancybox();
+    
+    $("#various3").fancybox({
+        'width'				: '75%',
+        'height'			: '75%',
+        'autoScale'			: false,
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none',
+        'type'				: 'iframe'
+    });
+    
+    $("#various4").fancybox({
+        'padding'			: 0,
+        'autoScale'			: false,
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none'
+    });
+});
+</script>
+<!-- //Подключаем Fancybox -->
+<title>Галерея-SportKam</title>
+</head>
+<body>
+<div id="layout_wrapper">
+<div id="layout_content">
+	<?php include_once('tamplate/head.html');?>
+      <div id="main">		
+		<div class="post">
+<div class="left"><?php  echo $bus["edit_gallery"]; ?> 
+
+<div class="gallery">
+<?php  echo $bus["gallery"]; ?>
+<br/>
+</div>
+<br/><center><div class="clear"><br/><hr/><?php  echo $bus["list"]; ?></div></center>
+</div>
+
+<div class="right">
+	<?php include_once('tamplate/r_bar.html');?>
+</div>    
+    <div class="clearer">&nbsp;</div>    
+    <?php include_once('tamplate/foot.html');?>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

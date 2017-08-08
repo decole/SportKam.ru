@@ -1,0 +1,210 @@
+.clear { 
+  clear:both; 
+} 
+.news { 
+  width:680px; 
+  height:160px; 
+  position:relative; 
+  margin-bottom:20px; 
+   margin-top:10px; 
+  padding:5px; 
+  background:#fff; 
+  border:1px solid #d3d3d3; 
+  font-family:helvetica, arial, sans-serif; 
+} 
+
+.Sport_shkoli { 
+  width:680px; 
+  height:160px; 
+  position:relative; 
+  margin-bottom:20px; 
+   margin-top:110px; 
+  padding:5px; 
+  background:#fff; 
+  
+  font-family:helvetica, arial, sans-serif; 
+} 
+.news_l { 
+  padding-right:165px; 
+  min-height:150px; 
+
+} 
+
+.news_l_Otdelenia { 
+  padding-right:5px; 
+  min-height:150px; 
+
+} 
+.news_r {
+	width: 155px;
+	height: 165px;
+	background: #f4f4f4;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+} 
+.news h2 { 
+  margin:0; 
+  background:url(http://mvcreative.ru/example/15/images/stripe.png) 0px 7px repeat; 
+  height:20px; 
+  overflow:hidden; 
+  margin:10px 0 15px 0; 
+  position:relative; 
+} 
+.news h2 a { 
+  background:#fff; 
+  padding:2px 10px 2px 0; 
+  text-decoration:none; 
+  color:#89a0af; /*цвет заголовка новости*/ 
+  font-size:16px; 
+} 
+.news h2 span a { 
+  padding-right:0; 
+} 
+.img_news { 
+  float:left; 
+  display:inline-block; 
+  margin:0 14px 5px 0; 
+  padding:5px; 
+  background:#EDF1F2; 
+  border:1px solid #DDE1E2; 
+ 
+} 
+.img_news img { 
+  width: 150px; 
+  height: 140px;
+  border:1px solid #DDE1E2; 
+} 
+.message { 
+  padding:0 0 10px 0; 
+  margin:0; 
+  font-size:12px; 
+  line-height:19px; 
+  text-align:justify; 
+} 
+.news_r .date { 
+  display:inline-block; 
+  position:relative; 
+  font-size:13px; 
+  padding:7px 10px 4px 10px; 
+  margin:7px 0 -5px 0; 
+  background: #06F; /*цвет блока с датой*/ 
+  border:1px solid #fff; 
+  color:#fff; 
+  text-align:center; 
+} 
+.news_r ul { 
+  list-style:none; 
+  margin:0; 
+  padding:0; 
+  text-align:left; 
+  width:135px; 
+  margin:18px auto 0 auto; 
+  font-size:12px; 
+} 
+.news_r ul li { 
+  padding:3px 0 3px 5px; 
+  border-bottom:1px dotted #BEBEBE; 
+} 
+.news_r ul li img { 
+  margin-right:10px; 
+  position:relative; 
+  top:4px; 
+} 
+.news_r ul li a, .news_r ul li span { 
+  color:#707070; 
+  text-decoration:none; 
+}
+.row_Dysh1 { position:relative;  left:-15px; top: 30px; margin-left: 80px;}
+.row_Dysh2 { position:relative;  left:-15px; top: 30px; margin-left: 85px; margin-right: 30px;}
+.row_Dysh3 { position:relative;  top:  30px; left:-15px;  margin-left: 150px;}
+.row_Dysh4 { position:relative;  left:-15px; top: 30px; margin-left: 98px;}
+.row_Dysh5 { position:relative;  left:-15px; top: 30px; margin-left: 100px;}
+.row_Antei { position:relative;  left:-15px; top: 30px; margin-left: 100px;}
+.row_Gymnastik { position:relative;  left:-15px; top: 30px; margin-left: 170px;}
+.row_DUC { position:relative;  left:-15px; top: 0px; margin-left: 150px;}
+.row_orientirovanie { position:relative;  left:-15px; top: 30px; margin-left: 100px;}
+.row_thekvondo { position:relative;  left:-15px; top: 30px; margin-left: 230px;}
+.addmenu_a_img {text-align:center; display:block; width:72px; margin-left:0px !important; }
+.addmenu_a_img img {display:block; margin:0 auto; margin-left:0px}
+.addmenu_point {float:left; margin-right: 15px; width:120px; }
+.addmenu_point img {float:left;}
+.addmenu_a {display:block; margin-bottom:10px; text-align:center; margin-top:55px; font-weight:bold;}
+
+
+.newslater1{
+	display:block;
+	width: 688px;
+	/*background-color:#FFF;*/
+	color:#333;
+	position:relative;
+	font-family:Cambria, serif;
+	font-size:14px;
+	color:#333;
+	margin-left: 4px;
+	margin-top: 10px;
+	/*margin-top: -4px;	*/
+	
+}
+
+
+.newslater1 tit{
+	display:block;
+	font-size:30px;
+	color:#036;
+	font-family: "PT Serif",Georgia,"Times New Roman",Times,serif;
+	margin-left: 15px;
+}
+.newslater1 bluefish{
+	display:block;
+	text-decoration: underline;
+	font-size:24px;
+	color:#036;
+	font-family: "PT Serif",Georgia,"Times New Roman",Times,serif;
+	padding-bottom:6px;
+}
+.newslater1 text{
+	line-height: 1.5em;
+}
+.newslater1 enoth_news{
+	color:#036;
+	text-decoration:underline;
+	font-size:16px;
+}
+.newslater1 enoth_news a{
+	/*color:#036;*/
+	color:#036;
+	text-decoration:underline;
+	font-size:16px;
+}
+.newslater1 p{
+	padding: 4px 0px 0px;
+	padding-left: 5px;
+	margin-top:8px;
+	
+}
+
+.Sections_tekst{
+margin-left: 20px;
+	/*font: normal 1.2em Verdana,Arial,sans-serif;*/
+	/*font:narmal Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;*/
+	font-family:Cambria, serif;
+	font-size:16px;
+	/*font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;*/
+	color:#333;
+	/*border:solid;*/
+	/*border-color:#D1D8E7;*/
+	border-color:#FFF;
+	width: 650px;	
+	/*height: auto;*/
+	text-align: left;
+	line-height: 1.2em;
+	/*text-overflow:clip;*/
+}
+.fones{
+	background:url(img/Sport_Section/Dysh%E2%84%961/1-kross.jpg) repeat-x;
+	/*background: #8C9DC3 url('img/navigation.jpg') repeat-x;*/
+	
+}

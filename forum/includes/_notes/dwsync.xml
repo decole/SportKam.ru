@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name=".htaccess" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="auth.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="bbcode.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="cache.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="constants.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="error_collector.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_admin.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_compress.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_content.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_convert.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_database_helper.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_display.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_install.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_jabber.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_messenger.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_module.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_posting.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_privmsgs.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_profile_fields.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_template.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_transfer.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_upload.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="functions_user.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="index.htm" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="message_parser.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="session.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="startup.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+<file name="template.php" server="sportkam.org//var/www/" local="130248048510000000" remote="130248048510000000" Dst="0" />
+</dwsync>

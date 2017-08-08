@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="keywords" content="" />
+<meta name="author" content="decole,duirnar" />
+
+<link rel="icon" href="favicon.ico"/>
+<!-- Styles of site -->
+<link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="ie_fixes.css" media="screen" /><![endif]-->
+<!-- Slider -->
+<!-- jQuery library -->
+		<script type="text/javascript" src="scripts/slider/js/external/_oldies/jquery-1.3.min.js"></script>
+		<!--<script type="text/javascript" src="../scripts/slider/js/external/jquery-1.6.2.min.js"></script>-->		
+		<!-- jQuery Plugin scripts -->
+		<script type="text/javascript" src="scripts/slider/js/external/jquery.easing.1.3.min.js"></script>
+		<script type="text/javascript" src="scripts/slider/js/external/jquery.mousewheel.min.js"></script>		
+		<!-- Slider Kit scripts -->
+		<script type="text/javascript" src="scripts/slider/js/sliderkit/jquery.sliderkit.1.9.2.pack.js"></script>	
+		<!-- Slider Kit launch -->
+		<script type="text/javascript">
+			$(window).load(function(){ //$(window).load() must be used instead of $(document).ready() because of Webkit compatibility		
+				// Photo gallery > Vertical
+				$(".photosgallery-vertical").sliderkit({
+					circular:true,
+					mousewheel:true,
+					shownavitems:5,
+					verticalnav:true,
+					navclipcenter:true,
+					auto:true
+				});				
+			});	
+		</script>			      
+		<!-- Slider Kit styles -->
+		<link rel="stylesheet" type="text/css" href="scripts/slider/css/sliderkit-core.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="scripts/slider/css/sliderkit-demos.css" media="screen, projection" />		
+		<!-- Slider Kit compatibility -->
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="../scripts/slider/css/sliderkit-demos-ie6.css" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="../scripts/slider/css/sliderkit-demos-ie7.css" /><![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" type="text/css" href="../scripts/slider/css/sliderkit-demos-ie8.css" /><![endif]-->
+<title>SportKam - Главная</title>
+</head>
+
+<body>
+<div id="layout_wrapper">
+<div id="layout_content">
+	<?php include_once('tamplate/head.html');?>
+      <div id="main">		
+		<div class="post">
+<div class="left">
+<!-- Start photosgallery-vertical -->
+<?php echo $bus["slider"]; ?>
+<!-- --> 
+<?php echo $bus["add_news"]; ?>
+<!-- -->	<hr/>
+			<?php  echo $bus["news"];?>	      
+<div class="tcenter"><img  src="img/strelko.png"/> - <a href="/index.php?list=1">[1]</a> - <a href="/index.php?list=2">[2]</a> - <a href="/index.php?page=all_news">Все новости</a> - <img  src="img/strelk.png"/></div>
+</div>
+<div class="right">
+	<?php include_once('tamplate/r_bar.html');?>
+</div>    
+    <div class="clearer">&nbsp;</div>    
+    <?php include_once('tamplate/foot.html');?>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

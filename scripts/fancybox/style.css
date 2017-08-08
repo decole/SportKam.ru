@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0;}
+body{color: #000000;background: #f4f4f4;font: normal 12px/18px Verdana, sans-serif;}
+h1 {margin: 10px 0;font-size: 30px;font-weight: bold;font-family: Arial;text-align: center;}
+h2 {margin: 8px 0;font-size: 20px;font-weight: bold;font-family: Arial;text-align: center;}
+a{outline: none; color: blue;}
+a img {border: 1px solid #BBB;padding: 2px;margin: 10px;vertical-align: top;}
+div{text-align: center;}
+.various a{margin: 5px 10px;}

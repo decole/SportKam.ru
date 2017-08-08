@@ -1,0 +1,186 @@
+﻿﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content=""/>
+<meta name="keywords" content="" />
+<meta name="author" content="decole,duirnar" />
+
+<link rel="icon" href="favicon.ico">
+<!-- Styles of site -->
+<link rel="stylesheet" type="text/css" href="reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script src="/ckeditor/ckeditor.js"></script>        
+<title>Ред.:<?php echo $bus["logo_news"];?></title>
+</head>
+<body>
+<div id="layout_wrapper">
+<div id="layout_content">
+	<?php include_once('tamplate/head.html');?>
+      <div id="main">		
+		<div class="post">
+<div class="left">
+  <div class="newslater">
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?105"></script> 
+<?php if (empty($bus["edit_news"])){
+?>
+<script src="/scripts/uploader/jquery.min.js"></script>
+<script src="/scripts/uploader/jquery.wallform.js"></script>
+<script>
+ $(document).ready(function() { 
+		
+            $('#photoimg').die('click').live('change', function()			{ 
+			           //$("#preview").html('');
+			    
+				$("#imageform").ajaxForm({target: '#preview', 
+				     beforeSubmit:function(){ 
+					
+					console.log('ttest');
+					$("#imageloadstatus").show();
+					 $("#imageloadbutton").hide();
+					 }, 
+					success:function(){ 
+				    console.log('test');
+					 $("#imageloadstatus").hide();
+					 $("#imageloadbutton").show();
+					}, 
+					error:function(){ 
+					console.log('xtest');
+					 $("#imageloadstatus").hide();
+					$("#imageloadbutton").show();
+					} }).submit();
+					
+		
+			});
+        }); 
+</script>
+<style>
+#preview
+{
+color:#cc0000;
+font-size:12px
+}
+.imgList 
+{
+max-height:150px;
+margin-left:5px;
+border:1px solid #dedede;
+padding:4px;	
+float:left;	
+}
+</style>
+<div>
+<div id='preview'>
+</div>
+<form id="imageform" method="post" enctype="multipart/form-data" action='/scripts/uploader/ajaxImageUpload.php' style="clear:both">
+<h1>Выгрузить картинку</h1> 
+<div id='imageloadstatus' style='display:none'><img src="/img/loader.gif" alt="Выгрузка...."/></div>
+<div id='imageloadbutton'>
+<input type="file" name="photos[]" id="photoimg" multiple />
+</div>
+</form>
+</div>
+	<br/>	
+		<form action="/index.php?page=edit_news&id_news=<?php echo $bus['id_news'];?>" method="post">
+			<label>
+				Cсылка на картинку
+			</label>
+            <input name="mini_img" value="<?php echo $bus["mini_img"];?>" style="width:520px;"/>
+            <!--
+            id новости:-->
+            <input name="id_news" value="<?php echo $bus["id_news"];?>" style="width:50px;" type="hidden"/><br/>
+            <label>
+			Название новости:
+			</label>
+            <input name="logo_news" value="<?php echo $bus["logo_news"];?>" style="width:520px;"/>
+         <br/>
+         		Cейчас статус - <?php echo $bus["status"]?>;
+         	<label>
+			Статус новости:
+			</label>            
+               <select size="1" name="status">
+               		<option selected value="1">Редактировать новость(1)</option>
+                    <option value="0">Удалить новость(0)</option>                 
+               </select><br/>
+            <label>
+			Категория спорта:
+			</label>                         
+               <select size="1" name="category">
+                <option selected value="<?php echo $bus["id_category"]?>"><?php echo $bus["category"]?></option>
+                <option value="1">Футбол</option>
+                <option value="2">Волейбол</option>
+                <option value="3">Баскетбол</option>
+				<option value="4">Плавание</option>
+                <option value="5">Фитнес</option>
+                <option value="6">Бодибилдинг</option>
+                <option value="7">Легкая атлетика</option>
+                <option value="8">Тяжелая атлетика</option>
+                <option value="9">Каратэ</option>
+                <option value="10">Дзюдо</option>
+                <option value="11">Гандбол</option>
+                <option value="12">Велоспорт</option>
+                <option value="13">Шахматы</option>
+                <option value="14">Рыбалка</option>
+                <option value="15">Настольный теннис</option>
+                <option value="16">Бильярд</option>
+                <option value="17">Боулинг</option>
+                <option value="18">Автоспорт</option>
+                <option value="19">Мотоспорт</option>
+                <option value="20">Парусный спорт</option>
+                <option value="21">Зимние виды</option>
+                <option value="22">Лыжные гонки</option>
+                <option value="23">Покер</option>
+				<option value="24">Страйкбол</option>
+                <option value="25">Спортивное ориентирование</option>
+                <option value="26">Стрельба</option>
+                <option value="27">Экстрим</option>
+                <option value="28">Ролинг</option>
+                <option value="29">Прочее</option>
+                <option value="30">Бокс</option>
+                <option value="31">Единоборства</option>
+                <option value="32">Тхэквондо</option>
+                <option value="33">Новости КЛБ</option>
+                <option value="34">Статьи о ЗОЖ</option>
+                <option value="35">Областные новости</option>
+               </select>
+         <br/>
+            <label for="editor2">
+				Мини новость
+			</label>        
+        <textarea class="ckeditor" cols="80" id="editor2" name="mini_news" rows="10">
+        <?php echo $bus["mini_news"];?>
+        </textarea>
+        
+			<label for="editor1">
+				Новость
+			</label>
+			<textarea class="ckeditor" cols="80" id="editor1" name="news" rows="10">
+			<?php echo $bus["news"];?>	
+			</textarea>		
+			<br/>
+            Добавляем ссылки на фото к статье (макс. 5 шт.)<br/>
+            Фото №1 <input name="img_n1" value="<?php echo $bus["img_n1"];?>" style="width:520px;"/><br/>
+            Фото №2 <input name="img_n2" value="<?php echo $bus["img_n2"];?>" style="width:520px;"/><br/>
+            Фото №3 <input name="img_n3" value="<?php echo $bus["img_n3"];?>" style="width:520px;"/><br/>
+            Фото №4 <input name="img_n4" value="<?php echo $bus["img_n4"];?>" style="width:520px;"/><br/>
+            Фото №5 <input name="img_n5" value="<?php echo $bus["img_n5"];?>" style="width:520px;"/><br/>
+			<input type="submit" value="Отправить">		
+	</form>
+    
+  <?php } if(!empty($bus["edit_news"])){?>
+	<H1 style="color:#F30"><?php echo $bus["edit_news"];?></H1>
+    <a href="/index.php?page=news&id=<?php echo $bus["id_news"];?>">Посмотреть редактируемую новость</a> | <a href="/index.php">На главную</a>
+    <?php }?>
+</div>
+</div>
+<div class="right">
+	<?php include_once('tamplate/r_bar.html');?>
+</div>   
+    <div class="clearer">&nbsp;</div>
+<?php include_once('tamplate/foot.html');?>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
